@@ -1,2 +1,5 @@
 Initial commit
 Main branch change
+First commit after reset
+Second commit after reset
+Commit 1
