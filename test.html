@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function showMessage() 
+        {
+            var message = document.getElementById("container");
+            if (message.classList.contains("hidden")) {
+        message.classList.remove("hidden");
+      } else {
+        message.classList.add("hidden");
+      }
+            
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <button id="button" onclick=showMessage()>
+            Click Here to View Message
+        </button>
+    </div>
+    <div id="container" class="hidden">
+        <p>
+            Thank You for clicking. This is the message you are reading.
+        </p>
+    </div>
+</body>
+</html>
