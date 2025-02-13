@@ -14,12 +14,60 @@
         {
             var message = document.getElementById("container");
             if (message.classList.contains("hidden")) {
-        message.classList.remove("hidden");
-      } else {
-        message.classList.add("hidden");
-      }
-            
+            message.classList.remove("hidden");
+        } else {
+            message.classList.add("hidden");
         }
+        }
+
+        // 1. Declaring variables using var, let, and const
+        var name = "Ram"; // var allows re-declaration and global scoping
+        let age = 25; // let allows reassignment but not re-declaration in the same scope
+        const country = "India"; // const prevents reassignment
+
+        // 2. Demonstrating different data types
+        let isStudent = true; // Boolean
+        let score = 95.5; // Number
+        let hobbies = ["Reading", "Gaming", "Hiking"]; // Array (Non-primitive)
+        let person = { firstName: "Ram", lastName: "Lakshman", age: 30 }; // Object (Non-primitive)
+        let undefinedVar; // Undefined
+        let nullValue = null; // Null
+
+        console.log(name, age, country, isStudent, score, hobbies, person, undefinedVar, nullValue);
+
+        // 3. Using various operators
+        let sum = age + score; // Arithmetic operator
+        let isAdult = age >= 18; // Comparison operator
+        let canVote = isAdult && country === "India"; // Logical operator
+
+        console.log("Sum:", sum, "Is Adult:", isAdult, "Can Vote:", canVote);
+
+        // 4. Truthy and Falsy values in conditionals
+        let testValue = ""; // Falsy value
+        if (testValue) {
+            console.log("Truthy");
+        } else {
+            console.log("Falsy");
+        }
+
+        // 5. String manipulations
+        let message1 = "Hello, World!";
+        let greeting = "Hi" + " " + name; // Concatenation
+        let slicedMessage = message1.slice(0, 5); // Slicing
+        let messageLength = message1.length; // Finding length
+
+        console.log("Greeting:", greeting, "Sliced:", slicedMessage, "Length:", messageLength);
+
+        // 6. Type conversions
+        let numberAsString = String(score); // Number to string
+        let stringAsNumber = Number("123"); // String to number
+        let booleanValue = Boolean(1); // Number to boolean
+
+        console.log("Converted to String:", numberAsString, "Converted to Number:", stringAsNumber, "Converted to Boolean:", booleanValue);
+
+            
+
+
     </script>
 </head>
 <body>
