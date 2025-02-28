@@ -15,3 +15,9 @@ function calculate (x,y){
 }
 
 console.log(calculate(10,2));
+
+const reversedString = (function(str) {
+    return str.split("").reverse().join("");
+})("hello");
+
+console.log(reversedString);
