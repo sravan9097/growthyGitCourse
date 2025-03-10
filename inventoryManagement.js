@@ -59,16 +59,10 @@ console.log("Total Inventory Value:", calTotalValue());
 
 const arrayNum = [1,2,3,4,5];
 
-<<<<<<< HEAD
-for (let i = arr.length - 1; i >= 0; i--) {
-    console.log(arr[i]);
-}
-=======
 for (let i = arrayNum.length - 1; i >= 0; i--) {
     console.log(arrayNum[i]);
 };
 
->>>>>>> af42205 (second  Hands-onActivity of Arrays&Objects  added)
 
 
 // Difference between for..of and for..in
